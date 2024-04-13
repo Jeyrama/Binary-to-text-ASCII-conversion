@@ -20,3 +20,14 @@ function binaryToString(binary) {
 }
 
 // or
+
+function binaryToString(binary) {
+  let arr = [];
+	if (binary.length){
+  	for (let i = 0; i < binary.length; i += 8) {
+    	arr.push(binary.substr(i, 8));
+    }
+  	return arr.map(s => String.fromCharCode(parseInt(s, 2))).join('');
+  }
+  return '';
+}
