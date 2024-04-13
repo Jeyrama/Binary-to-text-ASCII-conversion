@@ -18,3 +18,5 @@ function binaryToString(binary) {
     return String.fromCharCode(parseInt(v,2));
   });
 }
+
+// or
